@@ -1,0 +1,52 @@
+.contact-container {
+    max-width: 600px; /* Limitează lățimea formularului */
+    margin: 0 auto; /* Centrează formularul pe pagină */
+    padding: 20px; /* Adaugă un pic de padding */
+    background-color: #f9f9f9; /* Fundal deschis */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
+}
+
+h2 {
+    text-align: center; /* Centrează titlul */
+    color: #333; /* Culoare text */
+}
+
+form {
+    display: flex; /* Folosește flexbox pentru aranjare */
+    flex-direction: column; /* Dispunere pe verticală */
+}
+
+label {
+    margin-bottom: 5px; /* Spațiu între label și input */
+    color: #555; /* Culoare text */
+}
+
+input, textarea {
+    padding: 10px; /* Spațiu interior */
+    margin-bottom: 15px; /* Spațiu între câmpuri */
+    border: 1px solid #ccc; /* Bordură deschisă */
+    border-radius: 4px; /* Colțuri rotunjite */
+    font-size: 16px; /* Dimensiune font */
+    width: 100%; /* Setează lățimea câmpurilor la 100% */
+    box-sizing: border-box; /* Include padding și bordură în lățime */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Culoare bordură la focus */
+    outline: none; /* Elimină conturul implicit */
+}
+
+button {
+    padding: 10px; /* Spațiu interior */
+    background-color: #007BFF; /* Fundal albastru */
+    color: white; /* Text alb */
+    border: none; /* Fără bordură */
+    border-radius: 4px; /* Colțuri rotunjite */
+    font-size: 16px; /* Dimensiune font */
+    cursor: pointer; /* Cursor pointer */
+}
+
+button:hover {
+    background-color: #0056b3; /* Fundal mai închis la hover */
+}
