@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
  
-  "homepage": "/Web-Page",
+
 
   "scripts": {
     "start": "react-scripts start",
