@@ -1,26 +1,32 @@
-import React from 'react';
-import '../style/Home.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../style/Home.css";
 
 function Home() {
   return (
-    // <div className="home-container">
-      <div className="content-box">
-        <p>
-          {/* Poți înlocui acest text cu orice text dorești, inclusiv lorem ipsum */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          vehicula, urna sit amet vulputate congue, justo enim pharetra felis,
-           nec vehicula est enim eu erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          vehicula, urna sit amet vulputate congue, justo enim pharetra felis,
-           nec vehicula est enim eu erat.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          vehicula, urna sit amet vulputate congue, justo enim pharetra felis,
-           nec vehicula est enim eu erat.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          vehicula, urna sit amet vulputate congue, justo enim pharetra felis,
-           nec vehicula est enim eu erat.
-        </p>
-      </div>
-    // </div>
+    <main className="page">
+      <section className="page-card home-hero">
+        <div>
+          <h1 className="page-title">Bine ai venit</h1>
+          <p className="page-text">
+            O pagină modernă pentru prezentare, meniu, programe de wellness și
+            contact. Layout-ul se adaptează automat pe telefon, tabletă și
+            desktop.
+          </p>
+          <div className="home-actions">
+            <Link className="home-button" to="/menu">
+              Vezi meniul
+            </Link>
+            <Link className="home-button secondary" to="/contact">
+              Contactează-ne
+            </Link>
+          </div>
+        </div>
+        <div className="home-image-box" aria-label="Healthy food illustration">
+          <span>🥗</span>
+        </div>
+      </section>
+    </main>
   );
 }
 

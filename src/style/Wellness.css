@@ -1,0 +1,48 @@
+.wellness-card {
+  text-align: center;
+}
+
+.wellness-programs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.wellness-program {
+  padding: 22px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.wellness-program strong {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.95rem;
+}
+
+.wellness-program h3 {
+  margin: 0 0 10px;
+  color: #172033;
+}
+
+.wellness-program p {
+  margin: 0;
+  color: #5b6475;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .wellness-programs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wellness-programs {
+    grid-template-columns: 1fr;
+  }
+}

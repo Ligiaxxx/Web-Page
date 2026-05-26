@@ -1,52 +1,82 @@
-.contact-container {
-    max-width: 600px; /* Limitează lățimea formularului */
-    margin: 0 auto; /* Centrează formularul pe pagină */
-    padding: 20px; /* Adaugă un pic de padding */
-    background-color: #f9f9f9; /* Fundal deschis */
-    border-radius: 8px; /* Colțuri rotunjite */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
+.contact-card {
+  max-width: 760px;
+  text-align: center;
 }
 
-h2 {
-    text-align: center; /* Centrează titlul */
-    color: #333; /* Culoare text */
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+  text-align: left;
 }
 
-form {
-    display: flex; /* Folosește flexbox pentru aranjare */
-    flex-direction: column; /* Dispunere pe verticală */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-label {
-    margin-bottom: 5px; /* Spațiu între label și input */
-    color: #555; /* Culoare text */
+.form-group.full {
+  grid-column: 1 / -1;
 }
 
-input, textarea {
-    padding: 10px; /* Spațiu interior */
-    margin-bottom: 15px; /* Spațiu între câmpuri */
-    border: 1px solid #ccc; /* Bordură deschisă */
-    border-radius: 4px; /* Colțuri rotunjite */
-    font-size: 16px; /* Dimensiune font */
-    width: 100%; /* Setează lățimea câmpurilor la 100% */
-    box-sizing: border-box; /* Include padding și bordură în lățime */
+.form-group label {
+  color: #334155;
+  font-weight: 700;
 }
 
-input:focus, textarea:focus {
-    border-color: #007BFF; /* Culoare bordură la focus */
-    outline: none; /* Elimină conturul implicit */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #ffffff;
+  color: #172033;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-button {
-    padding: 10px; /* Spațiu interior */
-    background-color: #007BFF; /* Fundal albastru */
-    color: white; /* Text alb */
-    border: none; /* Fără bordură */
-    border-radius: 4px; /* Colțuri rotunjite */
-    font-size: 16px; /* Dimensiune font */
-    cursor: pointer; /* Cursor pointer */
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
 }
 
-button:hover {
-    background-color: #0056b3; /* Fundal mai închis la hover */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+  outline: none;
+}
+
+.contact-button {
+  grid-column: 1 / -1;
+  width: min(100%, 220px);
+  justify-self: center;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  background: #1d4ed8;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
 }
