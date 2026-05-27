@@ -9,19 +9,24 @@ function Navbar() {
         <Link className="navbar-logo" to="/">
           Healthy Page
         </Link>
+
         <ul className="navbar-list">
           <li className="navbar-item">
             <Link to="/">Home</Link>
           </li>
+
           <li className="navbar-item">
             <Link to="/about">About</Link>
           </li>
+
           <li className="navbar-item">
             <Link to="/menu">Meniul zilei</Link>
           </li>
+
           <li className="navbar-item">
             <Link to="/wellness">Wellness</Link>
           </li>
+
           <li className="navbar-item">
             <Link to="/contact">Contact</Link>
           </li>
